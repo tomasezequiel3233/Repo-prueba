@@ -11,13 +11,53 @@
     <meta name="copa.potrero" content="width=device-width, initial-scale=1.0" />
     <title>Copa Potrero</title>
     <!--etiqueta para el titulo-->
+    <link rel="stylesheet" href="./estilos.css" />
+    <!-- (link) etiqueta apra usar los estilos en todos nuestros archivos html -->
+
+    <!--(style) definimos los estilos de nuestros titulos y/o subttitulos-->
+    <style>
+      .titulo {
+        color: rgb(241, 135, 6);
+        font-size: 30px;
+        background-color: rgb(69, 33, 69);
+      }
+      .subtitulo {
+        color: rgb(241, 135, 6);
+        font-size: 30px;
+      }
+      .pildora {
+        /*pildora base*/
+        border-radius: 10px; /*color de bordes */
+        padding-top: 2px;
+        padding-right: 6px;
+        padding-bottom: 2px;
+        padding-left: 6px;
+        /*espaciado de relleno*/
+        color: black;
+      }
+      .pildora-violet {
+        color: rgb(241, 135, 6);
+        background-color: rgb(69, 33, 69);
+      }
+      .pildora-orange {
+        color: rgb(69, 33, 69);
+        background-color: rgb(241, 135, 6);
+      }
+    </style>
   </head>
 
   <body>
     <!--(cuerpo) lo que se va a ver en la pagina-->
-    <h1>¿Que es la copa Potrero?</h1>
+
+    <span class="pildora pildora-violet">pildora violeta</span>
+    <span class="pildora pildora-orange">pildora naranja</span>
+
+    <h1 class="titulo">¿Que es la copa Potrero?</h1>
     <!--para agregar subtitulos-->
-    <h2>El fenomeno deportivo que sacude las redes y los barrios</h2>
+    <h2 class="subtitulo">
+      El fenomeno deportivo que sacude las redes y los barrios
+    </h2>
+    <!--(class) para darle un estilo diferente a un titulo con estilo ya definido-->
 
     <p>
       <!--para agregar parrafos-->
@@ -33,19 +73,19 @@
       reconocidos.
     </p>
 
-    <a href="https://fixture.copapotrero.com/?y=2025&c=1628799194"
-      ><!--crea un enlace-->
+    <hr />
+    <!--(hr)crea linea separadora-->
 
-      <hr />
+    <a href="https://fixture.copapotrero.com/?y=2025&c=1628799194">
+      <!--(a)crea un enlace-->
 
-      <button>Pagina web</button
-      ><!--crea un boton-->
+      <button>Pagina web</button>
+      <!--(button)crea un boton-->
     </a>
 
     <hr />
-    <!--crea linea separadora-->
 
-    <h3>Jugadores de renombre en la copa:</h3>
+    <h2 class="titulo">Jugadores de renombre en la copa:</h2>
 
     <ul>
       <!--crea lista desordenada-->
@@ -58,7 +98,7 @@
       <li>entre otras ex estrellas</li>
     </ul>
 
-    <h4>Equipos cabeza de serie</h4>
+    <h2 class="titulo">Equipos cabeza de serie</h2>
 
     <ol>
       <!--crea lista ordenada-->

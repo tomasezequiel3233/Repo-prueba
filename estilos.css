@@ -1,0 +1,32 @@
+.titulo {
+  color: rgb(241, 135, 6); /*color del texto*/
+  font-size: 30px; /*tamaño del texto*/
+  background-color: rgb(69, 33, 69); /*color del fondo*/
+}
+
+.subtitulo {
+  color: rgb(241, 135, 6);
+  font-size: 30px;
+}
+
+/*para crear pildoras*/
+.pildora {
+  /*pildora base*/
+  border-radius: 10px; /*color de bordes */
+  padding-top: 2px;
+  padding-right: 6px;
+  padding-bottom: 2px;
+  padding-left: 6px;
+  /*espaciado de relleno*/
+  color: black;
+}
+
+.pildora-violet {
+  color: rgb(241, 135, 6);
+  background-color: rgb(69, 33, 69);
+}
+
+.pildora-orange {
+  color: rgb(69, 33, 69);
+  background-color: rgb(241, 135, 6);
+}
