@@ -16,9 +16,31 @@
         <a href="index.html">inicio</a
         ><!--(a)para crear enlaces a otra pagina-->
       </li>
-      <li>
-        <a href="contacto.html">contacto</a>
-      </li>
     </ul>
+
+    <p>Formulario de contacto</p>
+    <!--(form) para crear formularios-->
+    <form>
+      <label>Nombre</label>
+      <!--(label) para darle nombre al campo -->
+      <input type="text" /> <br />
+      <!--usa (br) en cada input para ir saltando de linea-->
+      <!--(input-type)para crear tipo de campo, en este caso texto-->
+      <label>Apellido</label>
+      <input type="text" /> <br />
+      <label>Email</label>
+      <input type="email" /> <br />
+
+      <select>
+        <!--(select) para crear camposd e seleccion-->
+        <option value="Profesional">Profesional</option>
+        <!--(option-value) para crear la opcion-->
+        <option value="Amateur">Amateur</option>
+      </select>
+      <br />
+
+      <input type="button" value="enviar" />
+      <!--para crear un boton de envio del formulario-->
+    </form>
   </body>
 </html>
