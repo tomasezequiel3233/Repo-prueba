@@ -47,7 +47,8 @@ button {
 
 ul,
 ol,
-p {
+p,
+label {
   color: rgba(241, 135, 6, 0.717);
 }
 
