@@ -2,8 +2,9 @@
 /*para agregar fuentes*/
 
 .titulo {
+  border: 1px solid; /*para agregar bordes*/
   text-align: center; /*para centrar*/
-  font-family: "Ciencia gotica" sans-serif;
+  font-family: "Ciencia gotica" sans-serif; /*para agregar una fuente*/
   color: rgb(241, 135, 6); /*color del texto*/
   font-size: 30px; /*tamaño del texto*/
   background-color: rgb(69, 33, 69); /*color del fondo*/
@@ -11,7 +12,7 @@
 
 .subtitulo {
   color: rgb(241, 135, 6);
-  font-size: 30px;
+  font-size: 23px;
 }
 
 /*para crear pildoras*/
@@ -47,11 +48,25 @@ button {
 
 ul,
 ol,
-p,
 label {
   color: rgba(241, 135, 6, 0.717);
 }
 
 strong {
   color: rgb(241, 135, 6);
+}
+
+p {
+  color: rgba(241, 135, 6, 0.717);
+  margin: 10px; /*(margin) cambia el margen de los textos*/
+  text-align: justify; /*para justificar*/
+}
+
+a:hover {
+  /*para que cambie el color cuando se pasa el raton*/
+  color: aqua;
+}
+
+input {
+  margin: 5px;
 }
