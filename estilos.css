@@ -1,4 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap");
+/*para agregar fuentes*/
+
 .titulo {
+  text-align: center; /*para centrar*/
+  font-family: "Ciencia gotica" sans-serif;
   color: rgb(241, 135, 6); /*color del texto*/
   font-size: 30px; /*tamaño del texto*/
   background-color: rgb(69, 33, 69); /*color del fondo*/
@@ -29,4 +34,19 @@
 .pildora-orange {
   color: rgb(69, 33, 69);
   background-color: rgb(241, 135, 6);
+}
+
+body {
+  background-color: rgb(15, 15, 16);
+}
+
+button {
+  color: rgb(241, 135, 6);
+  background-color: rgb(69, 33, 69);
+}
+
+ul,
+ol,
+p {
+  color: rgba(241, 135, 6, 0.717);
 }
