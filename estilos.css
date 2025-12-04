@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap");
 /*para agregar fuentes*/
 
+* {
+  box-sizing: border-box;
+  margin: 5;
+  padding: 5;
+}
+
 .titulo {
   border: 1px solid; /*para agregar bordes*/
   text-align: center; /*para centrar*/
@@ -16,25 +22,43 @@
 }
 
 /*para crear pildoras*/
-.pildora {
-  /*pildora base*/
-  border-radius: 10px; /*color de bordes */
-  padding-top: 2px;
-  padding-right: 6px;
-  padding-bottom: 2px;
-  padding-left: 6px;
-  /*espaciado de relleno*/
-  color: black;
+.padre {
+  /* (vh) "viewport heigt" hace referencia a la altura de la pantalla */
+  /* 100vh = 100% del alto del viewport */
+  /* 1vh = 1% de la pantalla */
+  height: 5vh;
+  /*  width: 213vh; /* ancho de la pantalla */
+  background-color: rgb(241, 135, 6);
+  display: flex; /* hacemos que el padre sea una flexbox */
+  flex-direction: row; /* los hijos se acomodan en fila (row) o en columna (column) */
+  gap: 20px; /* espacio entre los hijos */
+  justify-content: space-between; /* (justify content) acomoda a los hijos en el eje principal (eje x horizontal) */
+  /* left= izquierda, right= derecha y center para centrar los hijos */
+  /* space-evely= espaciar entre cada hijo y bordes le mismo valor */
+  /* space between= (el mas importante) divie el espacio sobrante entre cada hijo */
 }
 
-.pildora-violet {
+.hijo {
+  width: 300px;
+  height: 500px;
+  border-radius: 10px;
   color: rgb(241, 135, 6);
   background-color: rgb(69, 33, 69);
 }
 
-.pildora-orange {
-  color: rgb(69, 33, 69);
-  background-color: rgb(241, 135, 6);
+.hijo-1 {
+  color: rgb(241, 135, 6);
+  background-color: rgb(69, 33, 69);
+}
+
+.hijo-2 {
+  color: rgb(241, 135, 6);
+  background-color: rgb(69, 33, 69);
+}
+
+.hijo-3 {
+  color: rgb(241, 135, 6);
+  background-color: rgb(69, 33, 69);
 }
 
 body {
@@ -46,6 +70,7 @@ button {
   background-color: rgb(69, 33, 69);
 }
 
+a,
 ul,
 ol,
 label {
