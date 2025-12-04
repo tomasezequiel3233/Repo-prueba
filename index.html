@@ -14,14 +14,28 @@
     <!-- (link) etiqueta apra usar los estilos en todos nuestros archivos html -->
   </head>
 
-<body><!--(cuerpo) lo que se va a ver en la pagina-->
   <header>
-    <span class="padre"></span>
-      <span class="hijo"><a href="https://www.espn.com.ar/futbol/argentina/nota/_/id/14446246/calendario-fixture-partidos-resultados-copa-potrero-kun-aguero">Edicion 2024</a></span>
-      <span class="hijo hijo-1"><a href="#">disponibles</a></span>
-      <span class="hijo hijo-2"><a href="contacto.html">Suma tu equipo</a> </span>
-      <span class="hijo hijo-3"><a href="#">Equipos</a></span>
+    <section class="padre">
+      <div class="hijo">
+        <a href="https://www.espn.com.ar/futbol/argentina/nota/_/id/14446246/calendario-fixture-partidos-resultados-copa-potrero-kun-aguero">Edicion 2024</a>
+      </div><!--(div) se usa para crear cajas. Recomendado para flexbox-->
+      <div class="hijo hijo-1">
+        <a href="#2">Grupos</a>
+      </div>
+      <div class="hijo hijo-2">
+        <a href="#1">Jugadores top</a>
+      </div>
+      <div class="hijo hijo-3">
+        <a href="contacto.html">Participa</a> 
+      </div>
+      <div class="hijo hijo-4">
+        <a href="#3">Equipos</a>
+      </div>
+    </section>
   </header>
+
+<body><!--(cuerpo) lo que se va a ver en la pagina-->
+  
     <!--(header) para el encabezado-->
     <hr />
 
@@ -86,6 +100,7 @@
     <hr />
 
     <section>
+      <span id="1"></span>
       <h2 class="titulo">Jugadores de renombre en la copa:</h2>
       <ul>
         <!--crea lista desordenada-->
@@ -121,6 +136,7 @@
     </section>
 
     <section>
+      <span id="3"></span>
       <h2 class="titulo">Equipos en la edicion 2025:</h2>
       <ol>
         <!--crea lista ordenada-->
@@ -169,26 +185,40 @@
     </section>
 
     <section>
-<h2 class="titulo">Conformación de los grupos:</h2> 
+      <span id="2"></span>
+<h2 class="titulo">Conformacion de los grupos:</h2> 
   <ul>
-    <li>GRUPO A: La Crema, Federación Colombiana, Todo Suela, RFC y Baires.</li>
-    <li>GRUPO B: TAP San Pedro, GEBA, Ciclón, Social y Deportivo 1936 y GB Sports.</li>
-    <li>GRUPO C: Liga Nuñez, La Wilson, Las Piedras, La Fiebre y Barche.</li>
-    <li>GRUPO D: Picapiedra, Fuerte Apache, Montereyes, Championsli y Alejo F.C.</li>
-    <li>GRUPO E: Alto Pasto, Argeave Sports, Los Eucaliptus, Mammana F.C. y Mi abuela Lala.</li>
-    <li>GRUPO F: Moreno, El Guayo FC, Argentina Streamers, La Rosario y London F.C.</li>
-    <li>GRUPO G: San Alberto, Mamon, Área Sport, Bidonaccio y La Jaula.</li>
+    <li>GRUPO A: La Crema, Federación Colombiana, Todo Suela, RFC y Baires.</li><br />
+    <li>GRUPO B: TAP San Pedro, GEBA, Ciclón, Social y Deportivo 1936 y GB Sports.</li><br />
+    <li>GRUPO C: Liga Nuñez, La Wilson, Las Piedras, La Fiebre y Barche.</li><br />
+    <li>GRUPO D: Picapiedra, Fuerte Apache, Montereyes, Championsli y Alejo F.C.</li><br />
+    <li>GRUPO E: Alto Pasto, Argeave Sports, Los Eucaliptus, Mammana F.C. y Mi abuela Lala.</li><br />
+    <li>GRUPO F: Moreno, El Guayo FC, Argentina Streamers, La Rosario y London F.C.</li><br />
+    <li>GRUPO G: San Alberto, Mamon, Área Sport, Bidonaccio y La Jaula.</li><br />
     <li>GRUPO H: Ciudadela, Operativo Panda, La Gambeta, Dibu F.C. y Nikkei.</li>
   </ul> 
-    </section>
+  
+  <hr />
 
-      <hr />
-
-      <img
-        width="450px"
-        height="250px"
-        src="https://www.nexofin.com/archivos/2024/11/copa-potrero-1000x600.png"
-      />
+    </section class="flier-padre">
+        <div class="flier">
+          <img
+          width="250px"
+          height="250px"
+          src="https://www.nexofin.com/archivos/2024/11/copa-potrero-1000x600.png">
+        </div>
+        <div class="flier flier-1">
+          <img
+          width="250px"
+          height="250px"
+          src="https://www.clarin.com/2025/11/11/fcKT2HWqt_1200x0__1.jpg">
+        </div>
+        <div class="flier flier-2">
+          <img
+          width="250px"
+          height="250px"
+          src="https://i.redd.it/yfcf7ijiwvzf1.png">
+        </div>
       <!--para agregar imagenes-->
     </section>
 

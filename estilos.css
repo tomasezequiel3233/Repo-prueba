@@ -7,41 +7,21 @@
   padding: 5;
 }
 
-.titulo {
-  border: 1px solid; /*para agregar bordes*/
-  text-align: center; /*para centrar*/
-  font-family: "Ciencia gotica" sans-serif; /*para agregar una fuente*/
-  color: rgb(241, 135, 6); /*color del texto*/
-  font-size: 30px; /*tamaño del texto*/
-  background-color: rgb(69, 33, 69); /*color del fondo*/
-}
-
-.subtitulo {
-  color: rgb(241, 135, 6);
-  font-size: 23px;
-}
-
-/*para crear pildoras*/
+/*Uso de flexbox*/
+/*flexbox-1*/
 .padre {
-  /* (vh) "viewport heigt" hace referencia a la altura de la pantalla */
-  /* 100vh = 100% del alto del viewport */
-  /* 1vh = 1% de la pantalla */
-  height: 5vh;
-  /*  width: 213vh; /* ancho de la pantalla */
-  background-color: rgb(241, 135, 6);
-  display: flex; /* hacemos que el padre sea una flexbox */
-  flex-direction: row; /* los hijos se acomodan en fila (row) o en columna (column) */
-  gap: 20px; /* espacio entre los hijos */
-  justify-content: space-between; /* (justify content) acomoda a los hijos en el eje principal (eje x horizontal) */
-  /* left= izquierda, right= derecha y center para centrar los hijos */
-  /* space-evely= espaciar entre cada hijo y bordes le mismo valor */
-  /* space between= (el mas importante) divie el espacio sobrante entre cada hijo */
+  display: flex; /*para usar flexbox*/
+  justify-content: center; /*para centrar los elementos horizontalmente*/
+  flex-direction: row; /*para alinear los elementos en columna*/
+  gap: 15px; /*espacio entre los elementos*/
 }
 
 .hijo {
-  width: 300px;
-  height: 500px;
-  border-radius: 10px;
+  width: 100px;
+  height: 20px;
+  border-radius: 10px; /*redondea los bordes*/
+  text-align: center; /*para centrar los textos dentro del elemento*/
+  font-weight: bold; /*para poner en negrita*/
   color: rgb(241, 135, 6);
   background-color: rgb(69, 33, 69);
 }
@@ -59,6 +39,46 @@
 .hijo-3 {
   color: rgb(241, 135, 6);
   background-color: rgb(69, 33, 69);
+}
+
+/*flexbox-2*/
+.flier-padre {
+  display: flex; /*para usar flexbox*/
+  flex-direction: row; /*para alinear los elementos en columna*/
+  gap: 15px; /*espacio entre los elementos*/
+  flex-wrap: wrap; /*para que los elementos se ajusten al tamaño del contenedor*/
+  justify-content: center; /*para centrar los elementos horizontalmente*/
+}
+
+.flier {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px; /*redondea los bordes*/
+  background-color: rgb(69, 33, 69);
+}
+
+.flier-1 {
+  background-color: rgb(69, 33, 69);
+}
+
+.flier-2 {
+  background-color: rgb(69, 33, 69);
+}
+
+/*titulos-sub titulos */
+.titulo {
+  border-radius: 10px; /*redondea los bordes*/
+  border: 1px solid; /*para agregar bordes*/
+  text-align: center; /*para centrar*/
+  font-family: "Ciencia gotica" sans-serif; /*para agregar una fuente*/
+  color: rgb(241, 135, 6); /*color del texto*/
+  font-size: 30px; /*tamaño del texto*/
+  background-color: rgb(69, 33, 69); /*color del fondo*/
+}
+
+.subtitulo {
+  color: rgb(241, 135, 6);
+  font-size: 23px;
 }
 
 body {
